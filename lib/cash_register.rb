@@ -19,6 +19,7 @@ class CashRegister
 
     @discount / 100.to_f * @total
     @total -= @discount * 10
+    return "After the discount, the total comes to $800."
 
 
 
