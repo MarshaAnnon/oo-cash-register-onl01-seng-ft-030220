@@ -26,8 +26,8 @@ class CashRegister
   end
 
   def items
-    @items += title && price * quantity
-    @items
+    @items << title
+
   end
 
 
