@@ -17,8 +17,9 @@ class CashRegister
 
   def apply_discount
     if @discount == 0
-      "There is no discount to apply."
-    elsif @discount / 100.to_f * @total
+      return "There is no discount to apply."
+    end
+    @discount / 100.to_f * @total
     @total -= @discount * 10
       "After the discount, the total comes to $#{@total.to_1}."
 end
