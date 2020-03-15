@@ -3,10 +3,11 @@ require "pry"
 class CashRegister
 
   attr_accessor :total, :discount, :items
-
+  counter = 0
   def initialize(discount=0)
     @total = 0
     @discount = discount
+    @items = items
 
 
   end
@@ -26,8 +27,14 @@ class CashRegister
   end
 
   def items
-    items = []
-    items << add_item
+    while counter < quantity
+        @items << item
+        counter += 1
+      end
+    else
+      @items << item
+    end
+  end
 
   end
 
