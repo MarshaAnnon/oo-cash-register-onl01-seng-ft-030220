@@ -23,9 +23,9 @@ class CashRegister
     @total -= @discount * 10
       "After the discount, the total comes to $#{@total.to_i}."
   end
-
+binding.pry
   def items
-    binding.pry
+
     new_items = []
 
   end
