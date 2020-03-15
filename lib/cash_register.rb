@@ -29,12 +29,12 @@ class CashRegister
   def items
     if quantity > 1
     counter = 0
-    while counter < quantity
-      @items << item
+    while counter < add_item
+      @items << add_item
       counter += 1
     end
   else
-    @items << item
+    @items << add_item
   end
 
   end
