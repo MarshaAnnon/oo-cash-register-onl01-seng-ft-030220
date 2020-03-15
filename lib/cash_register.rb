@@ -25,8 +25,8 @@ class CashRegister
   end
 binding.pry
   def items
-
     new_items = []
+    items << new_items
 
   end
 
