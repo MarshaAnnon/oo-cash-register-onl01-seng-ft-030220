@@ -27,7 +27,7 @@ class CashRegister
   end
 
   def items
-    quantity.times {@item << title}
+    
   end
 
 
