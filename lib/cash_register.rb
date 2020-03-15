@@ -16,10 +16,9 @@ class CashRegister
   end
 
   def apply_discount
-    binding.pry
-    discount = 20%
-    self.discount + discount
-    @total - @discount == @total
+    @discount / 100.to_f * @total
+    price - @total
+    @total
   end
 
 end
