@@ -25,8 +25,8 @@ class CashRegister
       "After the discount, the total comes to $#{@total.to_i}."
   end
 
-  def items(new_items)
-    @items << new_items
+  def items
+    @items 
 
   end
 
