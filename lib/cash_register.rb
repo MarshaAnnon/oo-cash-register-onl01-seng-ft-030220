@@ -27,10 +27,10 @@ class CashRegister
   end
 
   def items
-
+    quantity.times {@item << title}
   end
 
-  
+
 
   #def void_last_transaction
       #@total -= @price
