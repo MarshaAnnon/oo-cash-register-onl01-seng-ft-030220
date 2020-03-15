@@ -25,7 +25,9 @@ class CashRegister
   end
 
   def items
-    self << title
+    binding.pry
+    new_items = []
+
   end
 
 
