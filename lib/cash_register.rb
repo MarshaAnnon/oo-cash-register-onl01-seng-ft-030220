@@ -30,7 +30,7 @@ class CashRegister
     while counter < quantity
       @items << items
         counter += 1
-      end
+
     else
       @items << items
     end
