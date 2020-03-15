@@ -27,7 +27,7 @@ class CashRegister
   end
 
   def items
-    if add_item > 1
+    if @total > 1
     counter = 0
     while counter < add_item
       @items << add_item
