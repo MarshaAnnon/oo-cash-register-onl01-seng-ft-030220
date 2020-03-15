@@ -27,17 +27,10 @@ class CashRegister
   end
 
   def items
-    if @total > 1
-    counter = 0
-    while counter < add_item
-      @items << add_item
-      counter += 1
-    end
-  else
-    @items << add_item
-  end
 
   end
+
+  
 
   #def void_last_transaction
       #@total -= @price
