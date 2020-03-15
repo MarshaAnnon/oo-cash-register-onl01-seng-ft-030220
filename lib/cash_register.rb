@@ -25,7 +25,7 @@ class CashRegister
       "After the discount, the total comes to $#{@total.to_i}."
   end
 
-  def items(title && price * quantity)
+  def items
     @items += title && price * quantity
     @items
   end
