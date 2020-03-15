@@ -20,8 +20,8 @@ class CashRegister
     @total -= @discount * 10
       if @discount
         "After the discount, the total comes to $800."
-    else
-      return "There is no discount to apply."
+      else
+        "There is no discount to apply."
     end
   end
 
